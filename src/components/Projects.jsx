@@ -12,20 +12,20 @@ const Projects = () => {
   const [scope, animate] = useAnimate()
 
   const toPrevious = () => {
-      animate(scope.current, {x: "calc(-50vw)"}, {duration: 1, ease: "easeInOut"})
+      animate(scope.current, {x: "calc(0vw)"}, {duration: 1, ease: "easeInOut"})
   }
 
   const toNext = () => {
-     animate(scope.current, {x: "calc(-250vw)"}, {duration: 1, ease: "easeInOut"})
+     animate(scope.current, {x: "calc(-200vw)"}, {duration: 1, ease: "easeInOut"})
   }
 
   const toMiddle = () => {
-     animate(scope.current, {x: "calc(-150vw)"}, {duration: 1, ease: "easeInOut"})
+     animate(scope.current, {x: "calc(-100vw)"}, {duration: 1, ease: "easeInOut"})
   }
   
   return (
-    <div className="w-max min-h-screen relative">
-        <motion.div className="w-[300vw] h-screen flex flex-row justify-start items-center projects absolute top-0 left-0" ref={scope} style={{x: "calc(-150vw)"}}>
+    <div className="w-full min-h-screen relative overflow-x-hidden">
+        <motion.div className="w-[300%] h-screen flex flex-row justify-start items-center projects absolute top-0 left-0" ref={scope} style={{x: "calc(-100vw)"}}>
           
           <div className="w-screen h-screen bg-violet-300 pt-[2vh] flex flex-row justify-center items-center relative">
               <button className="absolute top-[50%] right-[2vw] w-[4vw] h-[4vw] bg-slate-400 rounded-[50%] flex justify-center items-center opacity-25 hover:opacity-100" onClick={toMiddle}>

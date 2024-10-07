@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-      <div className='w-[clamp(640px,100vw, 3200px)] min-w-[640px] min-h-screen flex flex-col items-center sm:items-start relative bg-teal-200'>
+      <div className='w-full min-w-[640px] min-h-screen flex flex-col items-center sm:items-start relative bg-teal-200'>
         <Menu/>
         <PartB/>
         <PartC/>

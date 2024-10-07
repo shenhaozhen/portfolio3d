@@ -96,7 +96,7 @@ const PartB = () => {
 
   return (
     <>
-    <motion.div className="w-[100vw] min-h-screen text-white flex flex-row items-center justify-center relative mb-[0px]"  
+    <motion.div className="w-full min-h-screen text-white flex flex-row items-center justify-center relative mb-[0px]"  
                 initial="initial" animate="animate" id="part-b" style={{backgroundImage: bgStyle}}> 
       
       <motion.div className="w-[40%] flex flex-col justify-start items-center gap-[1vh]" > 

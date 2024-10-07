@@ -1,0 +1,26 @@
+
+.context_left > div{
+    -webkit-clip-path: polygon(80% 0, 100% 0, 100% 100%, 80% 100%, 50% 50%);
+    clip-path: polygon(80% 0, 100% 0, 100% 100%, 80% 100%, 50% 50%);
+    transform: translateX(50%);
+    transition: all 0.2s;
+}
+
+.context_left:hover {
+    & > div{
+        transform: translate(0%);
+    }
+}
+
+.context_right > div {
+    -webkit-clip-path: polygon(0 0, 20% 0, 50% 51%, 20% 100%, 0 100%);
+    clip-path: polygon(0 0, 20% 0, 50% 51%, 20% 100%, 0 100%);
+    transform: translateX(-50%);
+    transition: all 0.2s;
+}
+
+.context_right:hover {
+    & > div{
+        transform: translate(0%);
+    }
+};

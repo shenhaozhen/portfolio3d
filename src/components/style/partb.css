@@ -1,0 +1,21 @@
+@property --deg {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.title {
+  color: transparent;
+  background-image: linear-gradient(var(--deg), #4cbadb 0%, #56e398 50%, #b9e33c 100%);
+  background-clip: text;
+  animation: spin 15s linear infinite;    
+}
+  
+@keyframes spin {
+  100% {
+    --deg: 360deg;
+  }
+}
+
+
+

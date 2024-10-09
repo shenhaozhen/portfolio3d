@@ -1,6 +1,7 @@
 import {motion, useAnimate} from 'framer-motion'
 import imgSrc1 from '/3d_1.png'
 import imgSrc3 from '/2d_1_1.jpg'
+import ImgSrc4 from '/pro3dbg.jpeg'
 import { FaArrowLeft, FaArrowRight  } from "react-icons/fa"
 import { IconContext } from "react-icons";
 
@@ -48,7 +49,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="w-full h-screen bg-lime-300 pt-[2vh] flex flex-row justify-center items-center relative">
+          <div className="w-full h-screen  pt-[2vh] flex flex-row justify-center items-center relative bg-cover" style={{backgroundImage: `url(${ImgSrc4})`}}>
                 <button className="absolute top-[50%] left-[1vw] w-[4vw] h-[4vw] bg-slate-400 rounded-[50%] flex justify-center items-center opacity-25 hover:opacity-100" onClick={toMiddle}> 
                   <IconContext.Provider value={{ size: "2.5vw", color: "black" }}>
                     <FaArrowLeft/>

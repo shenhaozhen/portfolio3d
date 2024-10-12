@@ -6,6 +6,7 @@ import { FaArrowLeft, FaArrowRight  } from "react-icons/fa"
 import { IconContext } from "react-icons";
 
 import Projects3D from './Projects3D'
+import Projects2D from './Projects2D'
 
 import "./style/projects.css"
 const Projects = () => {
@@ -34,6 +35,7 @@ const Projects = () => {
                   <FaArrowRight/>
                 </IconContext.Provider>
              </button>
+             <Projects2D/>
           </div>
           <div className="w-full h-screen flex flex-row justify-center items-center gap-[10vw] text-xl"> 
             <div className="w-[35vw] h-[80vh] bg-[rgba(255,255,255,0.8)] bg-cover bg-center overflow-hidden relative context_left" style={{backgroundImage: `url(${imgSrc3})`}}>
@@ -49,7 +51,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="w-full h-screen  pt-[2vh] flex flex-row justify-center items-center relative bg-cover" style={{backgroundImage: `url(${ImgSrc4})`}}>
+          <div className="w-full h-screen  pt-[2vh] flex flex-row justify-center items-center relative bg-gradient-to-br from-violet-300 to-blue-400" >
                 <button className="absolute top-[50%] left-[1vw] w-[4vw] h-[4vw] bg-slate-400 rounded-[50%] flex justify-center items-center opacity-25 hover:opacity-100" onClick={toMiddle}> 
                   <IconContext.Provider value={{ size: "2.5vw", color: "black" }}>
                     <FaArrowLeft/>

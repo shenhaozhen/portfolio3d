@@ -1,6 +1,7 @@
 import { motion } from "framer-motion-3d"
 import { Canvas } from "@react-three/fiber"
 import Scene1 from "./scenes3d/Scene1"
+import Scene2 from "./scenes3d/Scene2"
 
 
 const Projects3D = () => {
@@ -17,17 +18,11 @@ const Projects3D = () => {
       </div>
 
       <div className="flex flex-col w-[28vw] h-[90vh] justify-start items-center">
-        <div className="w-[28vw] h-[30vh] text-center">
+        <div className="w-[28vw] h-[30vh] text-center flex flex-row justify-center items-center">
                 粒子效果
         </div>
         <div className="w-[28vw] h-[60vh]">
-            <Canvas camera={{position: [0, 0, 10]}}>
-                    <motion.mesh position={[-1, 1.1, 0]}>
-                        <boxGeometry args={[1, 1, 1]}/>
-                        <meshBasicMaterial color="red"/>
-                    </motion.mesh>
-
-            </Canvas>
+            <Scene2/>
         </div>
       </div>
 

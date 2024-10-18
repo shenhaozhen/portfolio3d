@@ -2,6 +2,7 @@ import { motion } from "framer-motion-3d"
 import { Canvas } from "@react-three/fiber"
 import Scene1 from "./scenes3d/Scene1"
 import Scene2 from "./scenes3d/Scene2"
+import Scene3 from "./scenes3d/Scene3"
 import { useEffect, useRef, useState } from "react"
 
 
@@ -39,14 +40,8 @@ const Projects3D = () => {
       </div>
 
      <div className="flex flex-col w-[28vw] h-[90vh] justify-start items-center">
-        <div className="w-[28vw] h-[65vh] ">
-            <Canvas camera={{position: [0, 0, 10]}}>
-                <motion.mesh position={[0, 0, 0]}>
-                    <boxGeometry args={[1, 1, 1]}/>
-                    <meshBasicMaterial color="green"/>
-                </motion.mesh>
-
-            </Canvas>
+        <div className="w-[28vw] h-[65vh] bg-slate-400">
+            <Scene3/>
         </div>
         <div className="w-[28vw] h-[25vh] text-center">
                 3D模型
